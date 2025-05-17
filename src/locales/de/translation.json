@@ -1,0 +1,131 @@
+{
+  "app": {
+    "name": "FoodSnap Vienna",
+    "tagline": "Entdecke authentische Wiener Küche"
+  },
+  "navigation": {
+    "discover": "Entdecken",
+    "map": "Karte",
+    "upload": "Hochladen",
+    "profile": "Profil"
+  },
+  "welcome": {
+    "heading": "Entdecke authentische Wiener Küche",
+    "subheading": "Finde die besten traditionellen Gerichte in Wien mit Fotos von echten Gästen",
+    "getStarted": "Jetzt Starten"
+  },
+  "discover": {
+    "title": "Gerichte Entdecken",
+    "filter": "Filter",
+    "categories": {
+      "all": "Alle",
+      "main": "Hauptgerichte",
+      "dessert": "Nachspeisen",
+      "starter": "Vorspeisen",
+      "drink": "Getränke"
+    },
+    "sorting": {
+      "popular": "Beliebteste",
+      "nearMe": "In der Nähe",
+      "priceRange": "Preis: {{range}}"
+    }
+  },
+  "dish": {
+    "history": "Geschichte",
+    "ingredients": "Zutaten",
+    "findNearby": "In der Nähe finden",
+    "reviews": "Bewertungen",
+    "addReview": "Bewertung hinzufügen",
+    "priceRange": "Preisklasse"
+  },
+  "map": {
+    "nearMe": "In meiner Nähe",
+    "filter": "Filter",
+    "restaurants": "Restaurants",
+    "description": "Entdecke Restaurants, in denen du traditionelle Wiener Gerichte genießen kannst",
+    "loading": "Restaurants werden geladen...",
+    "geolocationNotSupported": "Geolokalisierung wird von deinem Browser nicht unterstützt",
+    "locationError": "Dein Standort konnte nicht ermittelt werden",
+    "locating": "Standort wird ermittelt...",
+    "locationFound": "Standort gefunden",
+    "districts": "Bezirke",
+    "dishPrice": "Preis des Gerichts"
+  },
+  "upload": {
+    "title": "Teile deine Erfahrung",
+    "selectDish": "Gericht auswählen",
+    "selectRestaurant": "Restaurant auswählen",
+    "addPhoto": "Foto hinzufügen",
+    "rateExperience": "Erfahrung bewerten",
+    "comment": "Kommentar",
+    "submit": "Absenden",
+    "selectDishPrompt": "Wähle ein Gericht...",
+    "selectRestaurantPrompt": "Wähle ein Restaurant...",
+    "dragDropPhoto": "Klicke, um ein Foto hochzuladen oder ziehe es hierher",
+    "maxFileSize": "Maximale Dateigröße: 5MB",
+    "optional": "Optional",
+    "commentPlaceholder": "Teile deine Gedanken zu diesem Gericht..."
+  },
+  "profile": {
+    "title": "Mein Profil",
+    "level": "Level {{level}}",
+    "points": "Punkte",
+    "contributions": "Beiträge",
+    "reviews": "Bewertungen",
+    "badges": "Abzeichen & Erfolge",
+    "stats": "Statistiken",
+    "noContributions": "Du hast noch keine Beiträge geteilt. Füge dein erstes Foto hinzu!",
+    "logout": "Abmelden"
+  },
+  "levels": {
+    "beginner": "Anfänger",
+    "beginnerFoodie": "Anfänger Foodie",
+    "regularFoodie": "Regulärer Foodie",
+    "featuredFoodie": "Featured Foodie",
+    "expertFoodie": "Experten Foodie",
+    "topFoodie": "Top Foodie"
+  },
+  "auth": {
+    "login": "Anmelden",
+    "signup": "Registrieren",
+    "logout": "Abmelden",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "forgotPassword": "Passwort vergessen?",
+    "resetPassword": "Passwort zurücksetzen",
+    "sendResetLink": "Link zum Zurücksetzen senden",
+    "alreadyHaveAccount": "Bereits ein Konto?",
+    "dontHaveAccount": "Noch kein Konto?",
+    "or": "oder",
+    "continueWithGoogle": "Mit Google fortfahren",
+    "continueWithApple": "Mit Apple fortfahren",
+    "magicLink": "Magic Link senden",
+    "checkEmail": "Überprüfe deine E-Mails",
+    "backToLogin": "Zurück zur Anmeldung",
+    "successSignup": "Registrierung erfolgreich!",
+    "emailVerification": "Wir haben eine Bestätigungs-E-Mail gesendet. Bitte klicke auf den Link in der E-Mail, um deine Registrierung abzuschließen."
+  },
+  "login": {
+    "required": "Anmeldung erforderlich",
+    "message": "Bitte melde dich an, um fortzufahren",
+    "button": "Anmelden",
+    "uploadMessage": "Du musst angemeldet sein, um Fotos hochzuladen",
+    "loading": "Wird geladen..."
+  },
+  "connection": {
+    "connected": "Verbindung hergestellt",
+    "initializing": "Verbindung wird initialisiert...",
+    "reconnecting": "Verbindung wird wiederhergestellt...",
+    "networkError": "Netzwerkfehler. Überprüfe deine Internetverbindung",
+    "authError": "Authentifizierungsfehler. Bitte melde dich erneut an",
+    "dbError": "Fehler bei der Verbindung zur Datenbank",
+    "timeoutError": "Zeitüberschreitung bei der Verbindung",
+    "unknownError": "Unbekannter Verbindungsfehler",
+    "tryingReconnect": "Automatische Wiederverbindung wird versucht...",
+    "reconnect": "Erneut verbinden"
+  },
+  "common": {
+    "dismiss": "Schließen"
+  }
+}

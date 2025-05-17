@@ -1,0 +1,131 @@
+{
+  "app": {
+    "name": "FoodSnap Vienna",
+    "tagline": "Discover authentic Viennese cuisine"
+  },
+  "navigation": {
+    "discover": "Discover",
+    "map": "Map",
+    "upload": "Upload",
+    "profile": "Profile"
+  },
+  "welcome": {
+    "heading": "Discover authentic Viennese cuisine",
+    "subheading": "Find the best traditional dishes in Vienna with photos from real diners",
+    "getStarted": "Get Started"
+  },
+  "discover": {
+    "title": "Discover Dishes",
+    "filter": "Filter",
+    "categories": {
+      "all": "All",
+      "main": "Main Dishes",
+      "dessert": "Desserts",
+      "starter": "Starters",
+      "drink": "Drinks"
+    },
+    "sorting": {
+      "popular": "Most Popular",
+      "nearMe": "Near Me",
+      "priceRange": "Price: {{range}}"
+    }
+  },
+  "dish": {
+    "history": "History",
+    "ingredients": "Ingredients",
+    "findNearby": "Find Nearby",
+    "reviews": "Reviews",
+    "addReview": "Add Review",
+    "priceRange": "Price Range"
+  },
+  "map": {
+    "nearMe": "Near Me",
+    "filter": "Filter",
+    "restaurants": "Restaurants",
+    "description": "Explore restaurants where you can enjoy traditional Viennese dishes",
+    "loading": "Loading restaurants...",
+    "geolocationNotSupported": "Geolocation is not supported by your browser",
+    "locationError": "Could not get your location",
+    "locating": "Locating...",
+    "locationFound": "Location found",
+    "districts": "Districts",
+    "dishPrice": "Dish price"
+  },
+  "upload": {
+    "title": "Share Your Experience",
+    "selectDish": "Select Dish",
+    "selectRestaurant": "Select Restaurant",
+    "addPhoto": "Add Photo",
+    "rateExperience": "Rate Your Experience",
+    "comment": "Comment",
+    "submit": "Submit",
+    "selectDishPrompt": "Select a dish...",
+    "selectRestaurantPrompt": "Select a restaurant...",
+    "dragDropPhoto": "Click to upload a photo or drag and drop",
+    "maxFileSize": "Maximum file size: 5MB",
+    "optional": "Optional",
+    "commentPlaceholder": "Share your thoughts about this dish..."
+  },
+  "profile": {
+    "title": "My Profile",
+    "level": "Level {{level}}",
+    "points": "Points",
+    "contributions": "Contributions",
+    "reviews": "Reviews",
+    "badges": "Badges & Achievements",
+    "stats": "Statistics",
+    "noContributions": "You haven't shared any contributions yet. Add your first photo!",
+    "logout": "Log out"
+  },
+  "levels": {
+    "beginner": "Beginner",
+    "beginnerFoodie": "Beginner Foodie",
+    "regularFoodie": "Regular Foodie",
+    "featuredFoodie": "Featured Foodie",
+    "expertFoodie": "Expert Foodie",
+    "topFoodie": "Top Foodie"
+  },
+  "auth": {
+    "login": "Sign In",
+    "signup": "Sign Up",
+    "logout": "Log Out",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot password?",
+    "resetPassword": "Reset Password",
+    "sendResetLink": "Send Reset Link",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "or": "or",
+    "continueWithGoogle": "Continue with Google",
+    "continueWithApple": "Continue with Apple",
+    "magicLink": "Send Magic Link",
+    "checkEmail": "Check your email",
+    "backToLogin": "Back to login",
+    "successSignup": "Registration successful!",
+    "emailVerification": "We've sent a confirmation email. Please click the link in the email to complete your registration."
+  },
+  "login": {
+    "required": "Login Required",
+    "message": "Please sign in to continue",
+    "button": "Sign In",
+    "uploadMessage": "You need to be signed in to upload photos",
+    "loading": "Loading..."
+  },
+  "connection": {
+    "connected": "Connection established",
+    "initializing": "Initializing connection...",
+    "reconnecting": "Reconnecting...",
+    "networkError": "Network error. Check your internet connection",
+    "authError": "Authentication error. Please sign in again",
+    "dbError": "Error connecting to database",
+    "timeoutError": "Connection timeout",
+    "unknownError": "Unknown connection error",
+    "tryingReconnect": "Trying to reconnect automatically...",
+    "reconnect": "Reconnect"
+  },
+  "common": {
+    "dismiss": "Dismiss"
+  }
+}
