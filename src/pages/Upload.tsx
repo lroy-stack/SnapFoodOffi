@@ -11,6 +11,7 @@ import { restaurants } from '../data/restaurants';
 import { BadgeNotification } from '../components/gamification/AchievementNotification';
 import AlertBanner from '../components/common/AlertBanner';
 import { supabase } from '../services/supabaseClient';
+import { reviewService } from '../services/ReviewService';
 
 const Upload: React.FC = () => {
   const { t } = useTranslation();
@@ -169,53 +170,23 @@ const Upload: React.FC = () => {
     setFormError(null);
     
     try {
-      // Simular la carga de la imagen a Supabase Storage
-      console.log('Uploading photo:', photoFile?.name);
+      // Utilizar el nuevo ReviewService para crear la reseña con foto
+      const result = await reviewService.createReview(
+        authUser.id,
+        selectedDish,
+        selectedRestaurant,
+        rating,
+        comment,
+        photoFile
+      );
       
-      // Crear un nombre de archivo único
-      const fileName = `${authUser.id}_${selectedDish}_${Date.now()}.jpg`;
-      const filePath = `public/${selectedRestaurant}/${fileName}`;
-      
-      console.log('📸 Subiendo foto a Supabase Storage:', filePath);
-      
-      // Subir la imagen a Supabase Storage
-      const { data: storageData, error: storageError } = await supabase
-        .storage
-        .from('dishes')
-        .upload(filePath, photoFile as File);
-      
-      if (storageError) {
-        console.error('❌ Error al subir la imagen:', storageError);
-        throw storageError;
+      if (!result.success) {
+        console.error('❌ Error al crear reseña:', result.error);
+        throw new Error(result.error);
       }
       
-      // Obtener la URL pública de la imagen
-      const { data: publicUrlData } = supabase
-        .storage
-        .from('dishes')
-        .getPublicUrl(filePath);
-      
-      const photoUrl = publicUrlData?.publicUrl;
-      console.log('✅ Imagen subida correctamente. URL:', photoUrl);
-      
-      // Guardar la referencia de la foto en la base de datos
-      const { error: dbError } = await supabase
-        .from('fotos')
-        .insert({
-          benutzer_id: authUser.id,
-          gericht_id: selectedDish,
-          restaurant_id: selectedRestaurant,
-          foto_url: photoUrl,
-          beschreibung: comment || null,
-          erstellt_am: new Date().toISOString()
-        });
-      
-      if (dbError) {
-        console.error('❌ Error al guardar referencia de foto en DB:', dbError);
-        throw dbError;
-      }
-      
-      console.log('✅ Referencia de foto guardada en base de datos');
+      const photoUrl = result.photoUrl;
+      console.log('✅ Reseña y foto guardadas correctamente.');
       
       // Primero registramos la actividad de foto (5 puntos)
       const photoPoints = await logActivity('photo', { 
