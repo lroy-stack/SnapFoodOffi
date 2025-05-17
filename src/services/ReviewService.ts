@@ -1,6 +1,7 @@
 import { supabase } from './supabaseClient';
 import { storageService } from './StorageService';
 import i18n from '../utils/i18n';
+import { DBBewertung, DBFoto } from '../types/DBTypes';
 
 /**
  * Service for handling reviews and photos
