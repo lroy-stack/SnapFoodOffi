@@ -1,63 +1,33 @@
-# SnapFoodOffi
+# SnapFoodOffi — Viennese food discovery app
 
-SnapFoodOffi is an application that allows users to discover authentic Viennese cuisine, share photos, and interact with a community of food enthusiasts.
+A prototype from May 2025, generated with Bolt (`.bolt/` folder; package name `foodsnap-vienna`). A mobile-first community app to discover Viennese dishes and restaurants, share photos and reviews, and earn badges.
 
-## Features
+## What it does
 
-- **User Authentication**: Robust registration and login system with email verification, social logins, and magic links.
-- **Profile Management**: User profiles with customizable usernames, display names, and profile pictures.
-- **Multilingual Support**: Full support for German and English languages.
-- **Interactive Map**: Explore restaurants on a map interface.
-- **Dish Discovery**: Browse through authentic Viennese dishes with photos.
-- **Gamification**: Level system, badges, and achievements for user engagement.
-- **Responsive Design**: Built with a mobile-first approach using Tailwind CSS.
+- Discover page with a dish list, search and filters, plus dish detail pages.
+- Restaurant map with markers and popups (MapLibre via `react-map-gl`).
+- Upload page: pick a dish and restaurant, rate, comment and add a photo.
+- Accounts with email and password, social login options and magic links through Supabase Auth; profile editor and stats.
+- Gamification: levels, badges and achievement notifications, with fallback services for when the network fails.
+- German and English translations. About 20 Supabase SQL migrations in `supabase/migrations/`.
 
-## Technical Overview
+## Built with
 
-### Frontend
-- React with TypeScript
-- React Router for navigation
-- Framer Motion for animations
-- Tailwind CSS for styling
-- i18next for internationalization
+Vite, React 18, TypeScript, Tailwind CSS, Framer Motion, i18next, MapLibre GL, Supabase, Netlify config.
 
-### Backend
-- Supabase for authentication, database, and storage
-- PostgreSQL database
+## Run it locally
 
-## Authentication and Profile System
+```bash
+git clone https://github.com/lroy-stack/SnapFoodOffi.git
+cd SnapFoodOffi
+npm install
+npm run dev
+```
 
-The application implements a robust authentication system with:
+You need your own Supabase project with the migrations applied.
 
-- Email and password authentication with verification
-- Social login options (Google, Apple)
-- Magic link authentication
-- Automatic profile creation upon registration
-- Fallback mechanisms for network issues
-- Multi-layered profile loading with error handling
+Status: archived prototype, not maintained.
 
-## Development
+---
 
-### Prerequisites
-- Node.js
-- npm or yarn
-- Supabase account
-
-### Setup
-1. Clone the repository
-2. Install dependencies:
-   ```
-   npm install
-   ```
-3. Start the development server:
-   ```
-   npm run dev
-   ```
-
-## Implemented Improvements
-
-- Enhanced profile management with proper permission handling
-- Bilingual logging and user feedback (German/English)
-- Automatic profile creation during registration
-- Recovery mechanisms for network issues
-- Optimized authentication flow with better error handling
+Prototipo de mayo 2025 hecho con Bolt: app para descubrir platos y restaurantes de Viena, con mapa, reseñas con foto, insignias y niveles, sobre Supabase.
